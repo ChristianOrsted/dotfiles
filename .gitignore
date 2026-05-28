@@ -1,0 +1,22 @@
+# 根目录的原始配置文件（正式版在 configs/）
+/.zshrc
+/starship.toml
+
+# 临时/草稿文件
+prompt.txt
+
+# 安装脚本产生的备份目录
+.dotfiles_backup/
+
+# Claude Code 本地配置
+.claude/
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
