@@ -83,9 +83,6 @@ setopt INC_APPEND_HISTORY
 setopt AUTO_CD
 
 # ── 插件 ───────────────────────────────────────────────────
-[[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && \
-  source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 [[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && \
   source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 

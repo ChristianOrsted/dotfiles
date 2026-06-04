@@ -69,22 +69,6 @@ install_autosuggestions() {
     log "zsh-autosuggestions 就绪"
 }
 
-# ── 安装 zsh-syntax-highlighting ──────────────────────────
-install_syntax_highlighting() {
-    step "zsh-syntax-highlighting"
-    local target="$HOME/.zsh/zsh-syntax-highlighting"
-    if [[ -d "$target/.git" ]]; then
-        info "更新 zsh-syntax-highlighting..."
-        git -C "$target" pull --ff-only
-    else
-        mkdir -p "$HOME/.zsh"
-        git clone --depth=1 \
-            https://github.com/zsh-users/zsh-syntax-highlighting \
-            "$target"
-    fi
-    log "zsh-syntax-highlighting 就绪"
-}
-
 # ── 安装 starship ──────────────────────────────────────────
 install_starship() {
     step "starship"
@@ -159,7 +143,6 @@ main() {
 
     install_zsh
     install_autosuggestions
-    install_syntax_highlighting
     install_starship
     deploy_configs
     change_shell
